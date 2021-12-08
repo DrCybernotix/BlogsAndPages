@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html -->
+<html class="v2" dir="ltr" lang="en" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./C++ _ Truths and Myths_files/1667664774-css_bundle_v2.css" rel="stylesheet" type="text/css">
+<meta content="width=1100" name="viewport">
+
+<meta content="blogger" name="generator">
+<link href="https://syeta2-group3-oop-ha.blogspot.com/favicon.ico" rel="icon" type="image/x-icon">
+<link href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="C++ : Truths and Myths. - Atom" href="https://syeta2-group3-oop-ha.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="C++ : Truths and Myths. - RSS" href="https://syeta2-group3-oop-ha.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="C++ : Truths and Myths. - Atom" href="https://www.blogger.com/feeds/9187332816511663178/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="C++ : Truths and Myths. - Atom" href="https://syeta2-group3-oop-ha.blogspot.com/feeds/1136105483235322620/comments/default">
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/403901366-ieretrofit.js"></script>
+<![endif]-->
+<link href="./C++ _ Truths and Myths_files/image.png" rel="image_src">
+<meta content="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html" property="og:url">
+<meta content="C++ : Truths &amp; Myths" property="og:title">
+<meta content="Vishwakarma Institute of Technology (An Autonomous Institute affiliated to Savitribai Phule Pune University) AY 2020 - 2021 #include &lt;iostre..." property="og:description">
+<meta content="https://lh3.googleusercontent.com/-LfZsVN-UFAY/YMkAencfg8I/AAAAAAAAAP0/6BCfDwV_QbovFRWwDl2eVQq1oXGhmmOawCLcBGAsYHQ/w1200-h630-p-k-no-nu/image.png" property="og:image">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>C++ : Truths and Myths.: C++ : Truths &amp; Myths</title>
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #cccccc;
+background: #292929 none repeat scroll top left;
+padding: 0 40px 40px 40px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #dd7700;
+}
+a:visited {
+text-decoration:none;
+color: #cc6600;
+}
+a:hover {
+text-decoration:underline;
+color: #cc6600;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 10px;
+}
+.content-inner {
+background-color: #333333;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 140%;
+color: #aaaaaa;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 30px;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 30px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 1px solid #404040;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #404040;
+border-left: 0 solid #404040;
+border-right: 0 solid #404040;
+}
+.tabs-inner .widget ul {
+background: #222222 none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #404040;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #333333;
+border-right: 0 solid #404040;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #ffffff;
+background-color: #000000;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #404040;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #404040;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid #404040;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: transparent;
+color: #cccccc;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
+}
+.main-inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.main-inner .column-center-inner {
+padding: 0 15px;
+}
+.main-inner .column-center-inner .section {
+margin: 0 15px;
+}
+.post {
+margin: 0 0 25px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 0;
+background: #111111;
+border: 1px solid #111111;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 1px;
+}
+.post-body .tr-caption-container {
+color: #cccccc;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #888888;
+background-color: #303030;
+border-bottom: 1px solid #444444;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #404040;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #111111;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #303030;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #404040;
+}
+.blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #333333;
+padding: 5px;
+}
+.footer-outer {
+border-top: 0 dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #333333;
+}
+.mobile-index-contents {
+color: #cccccc;
+}
+.mobile-link-button {
+background-color: #dd7700;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #000000;
+color: #ffffff;
+border-top: 1px solid #404040;
+border-bottom: 1px solid #404040;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #404040;
+}
+
+--></style>
+<style id="template-skin-1" type="text/css"><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 310px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 310px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("310px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 310px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 310px;
+margin-right: -310px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<link href="./C++ _ Truths and Myths_files/authorization.css" media="all" onload="if(media!=&#39;all&#39;)media=&#39;all&#39;" rel="stylesheet"><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=9187332816511663178&amp;zx=2062436f-be1d-4cbe-89de-2169b9b49c26' rel='stylesheet'/></noscript>
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
+
+<link rel="stylesheet" href="./C++ _ Truths and Myths_files/css2"><script src="./C++ _ Truths and Myths_files/cb=gapi.loaded_2" async=""></script><script type="text/javascript" src="./C++ _ Truths and Myths_files/f.txt"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./C++ _ Truths and Myths_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="./C++ _ Truths and Myths_files/m=el_main"></script><style>.gc-bubbleDefault{table-layout:auto!important}.gc-bubbleDefault,.gc-reset{background-color:transparent!important;text-align:left;padding:0!important;margin:0!important;border:0!important}.pls-bubbleTop{border-bottom:1px solid #ccc!important}.pls-contentLeft,.pls-topTail,.pls-vertShimLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif)!important}.pls-topTail{background-repeat:repeat-x!important;background-position:bottom!important}.pls-vertShim{background-color:#fff!important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5!important}.pls-vertShimLeft{background-repeat:repeat-y!important;background-position:100%!important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2!important}.pls-contentWrap{background-color:#fff!important;position:relative!important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:100%;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png)!important;background-repeat:repeat-y!important}.pls-dropBL,.pls-dropBottom,.pls-dropRight,.pls-dropTR .pls-dropBR,.pls-tailleft,.pls-vert,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png)!important;background-repeat:repeat-x!important;width:100%}.pls-topLeft{text-align:right}.pls-topLeft,.pls-topRight{background:inherit!important;vertical-align:bottom}.pls-topRight{text-align:left}.pls-bottomLeft{background:inherit!important;text-align:right}.pls-bottomRight{background:inherit!important;text-align:left;vertical-align:top}.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{display:none;position:relative}.pls-dropBL,.pls-dropBR,.pls-dropTR,.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png)!important;background-repeat:no-repeat}.tbl-grey .pls-dropBL,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropTR,.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailleft,.tbl-grey .pls-tailright,.tbl-grey .pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png)!important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-tailbottom,.pls-topLeft img,.pls-topRight img{vertical-align:bottom}.bubbleDropTR,.pls-bottomLeft,.pls-bottomLeft img,.pls-dropBottom img,.pls-dropBottomL img,.pls-dropBottomR img{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacerbottom,.pls-spacerleft,.pls-spacerright,.pls-spacertop{position:static!important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style><script async="" src="./C++ _ Truths and Myths_files/lazy.min.js.download"></script></head>
+<body class=" variant-dark" style="position: relative; min-height: 100%; top: 0px;">
+<div class="navbar section" id="navbar" name="Navbar"><div class="widget Navbar" data-version="1" id="Navbar1"><script src="./C++ _ Truths and Myths_files/cb=gapi.loaded_1" async=""></script><script src="./C++ _ Truths and Myths_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" width="100%" id="navbar-iframe" name="navbar-iframe" src="./C++ _ Truths and Myths_files/navbar.html"></iframe></div>
+<script type="text/javascript" src="./C++ _ Truths and Myths_files/plusone.js.download" gapi_processed="true"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d9187332816511663178\x26blogName\x3dC%2B%2B+:+Truths+and+Myths.\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://syeta2-group3-oop-ha.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://syeta2-group3-oop-ha.blogspot.com/\x26targetPostID\x3d1136105483235322620\x26blogPostOrPageUrl\x3dhttps://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html\x26vt\x3d5673021765639693682',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header" name="Header"><div class="widget Header" data-version="1" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="https://syeta2-group3-oop-ha.blogspot.com/">
+C++ : Truths and Myths.
+</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs no-items section" id="crosscol" name="Cross-Column"></div>
+<div class="tabs no-items section" id="crosscol-overflow" name="Cross-Column 2"></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main" name="Main"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts hfeed">
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>Tuesday, June 15, 2021</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry uncustomized-post-template" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="https://lh3.googleusercontent.com/-LfZsVN-UFAY/YMkAencfg8I/AAAAAAAAAP0/6BCfDwV_QbovFRWwDl2eVQq1oXGhmmOawCLcBGAsYHQ/image.png" itemprop="image_url">
+<meta content="9187332816511663178" itemprop="blogId">
+<meta content="1136105483235322620" itemprop="postId">
+<a name="1136105483235322620"></a>
+<h3 class="post-title entry-title" itemprop="name">
+C++ : Truths &amp; Myths
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-1136105483235322620" itemprop="description articleBody">
+<p><span style="font-family: verdana;"></span></p><div class="separator" style="clear: both; text-align: center;"><div class="separator" style="clear: both; text-align: left;"><h1 align="center" style="background: white; color: #757575; margin: 0cm 0px 0.67em; text-align: center;"><span style="font-family: Source Sans Pro;"><span face="&quot;Arial&quot;,&quot;sans-serif&quot;" lang="EN-IN" style="color: #292b2c; font-size: 22pt; line-height: 31.3867px;">Vishwakarma Institute of Technology</span><span face="&quot;Arial&quot;,&quot;sans-serif&quot;" lang="EN-IN" style="color: #222222;"><o:p></o:p></span></span></h1><h4 align="center" style="background: white; color: #757575; font-size: 15px; margin: 6.25pt 0cm; text-align: center;"><b><span face="&quot;Arial&quot;,&quot;sans-serif&quot;" lang="EN-IN" style="color: #5d5f61; font-size: 9pt; line-height: 12.84px;"><span style="font-family: Source Sans Pro;">(An Autonomous Institute affiliated to Savitribai Phule Pune University)</span></span></b></h4><div style="text-align: center;"><b><span face="&quot;Arial&quot;,&quot;sans-serif&quot;" lang="EN-IN" style="color: #5d5f61; font-size: 9pt; line-height: 12.84px;"><span style="font-family: Source Sans Pro;">AY 2020 - 2021</span></span></b></div></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;">#include &lt;iostream&gt;</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;">using namespace std;</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;">int main()</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;">{</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp;&nbsp;</span></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span style="white-space: pre;">	</span>char division[] = "<b><u><span style="color: #073763;">SYET-A2</span></u></b>";</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp;&nbsp;</span>char group[] = "<u><b><span style="color: #073763;">Three</span></b></u>";</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp;&nbsp;</span>char oopHA[] = "<b><u>Truths and&nbsp; Myths : C++</u></b>";</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span style="white-space: pre;">	</span>cout &lt;&lt; oopHA&lt;&lt; " - LET US LEARN MORE ABOUT THE TRUTHS AND THE MYTHS OF CPP";</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp;&nbsp;</span></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp;&nbsp;</span></span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;"><span style="white-space: pre;">	</span>return 0;</span></div><div class="separator" style="clear: both; text-align: left;"><span style="font-family: Source Sans Pro;">}</span><div class="separator" style="clear: both; text-align: center;"><a href="./C++ _ Truths and Myths_files/image.png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro;"><img alt="" data-original-height="500" data-original-width="1170" height="137" src="./C++ _ Truths and Myths_files/image.png" width="320"></span></a></div></div><div><span style="font-family: Source Sans Pro;"><br></span></div></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro;"><br></span></div><div class="separator" style="clear: both; text-align: center;"><a href="./C++ _ Truths and Myths_files/image(1).png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro; font-size: medium;"><img alt="" data-original-height="300" data-original-width="400" height="240" src="./C++ _ Truths and Myths_files/image(1).png" width="320"></span></a></div><span style="font-family: Source Sans Pro; font-size: medium;"><div style="text-align: justify;"><br></div><div style="text-align: justify;"><br></div></span><p></p><p style="text-align: justify;"><span style="font-family: Source Sans Pro; font-size: medium;">&nbsp;&nbsp; &nbsp;&nbsp; Before getting into the myths and the truths regarding our topic, the C++ programming language let us first dive into the base, the foundation and some back history of C++ programming language.&nbsp;</span></p><div style="text-align: justify;"><span style="font-size: medium;"><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span>Let us begin with the time when language C plus plus was formed, the language was created back in early 1980s, and as the name suggests it was an advancement of pre existing programming language C. This language&nbsp;<span style="background-color: white; color: #202124;">was&nbsp;</span><b style="background-color: white; color: #202124;">developed</b><span style="background-color: white; color: #202124;">&nbsp;by Danish computer scientist Bjarne Stroustrup at Bell Labs. As the need of that time was to built an&nbsp;</span><span style="background-color: white; color: #202124;">efficient and flexible programming language, a language which was similar to C, a language that also provided high-level features for various other program organization.&nbsp;</span></span></span></div><div style="text-align: justify;"><span style="font-size: medium;"><span style="font-family: Source Sans Pro;"><span style="background-color: white; color: #202124;"><br></span></span></span><span style="font-family: Source Sans Pro; font-size: medium;"><span style="background-color: white; color: #202124;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span>The language which today you know by C++ was&nbsp;</span><span style="background-color: white; color: #202124;">initially known as&nbsp;</span><span style="background-color: white;"><span style="color: #0b5394;"><b>“</b><b style="text-decoration-line: underline;">C with classes</b><b>"</b>&nbsp;</span></span><span style="background-color: white; color: #202124;">and it was renamed&nbsp;</span><b style="background-color: white; color: #202124;">C++</b><span style="background-color: white; color: #202124;">&nbsp;in <b>1983</b>. <b>Mr</b>.&nbsp;</span><b style="background-color: white; color: #202124;">Bjarne Stroustrup</b><span style="background-color: white; color: #202124;">, a well known designer and original implementer of C++ programming language then this programming language was utilized worldwide. Also then <b>Dr.</b>&nbsp;</span><b style="background-color: white; color: #202124;">Stroustrup, </b><span style="background-color: white; color: #202124;">who is the founder,&nbsp;</span><span style="background-color: white; color: #202124;">began developing C++ in <b>1979</b>, which first made its public appearance in <b>1985.</b></span></span></div><p style="text-align: justify;"><span style="font-family: Source Sans Pro; font-size: medium;"><span style="background-color: white; color: #202124;"><br></span></span></p><p><span style="font-family: Source Sans Pro; font-size: medium;"><span style="background-color: white; color: #202124;"></span></span></p><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro; font-size: medium;"><a href="./C++ _ Truths and Myths_files/image(2).png" style="margin-left: 1em; margin-right: 1em;"><img alt="" data-original-height="437" data-original-width="600" height="233" src="./C++ _ Truths and Myths_files/image(2).png" width="320"></a></span></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro; font-size: medium;"><b><span style="text-align: left;">Mr.&nbsp;</span><span style="text-align: left;">Bjarne Stroustrup</span></b></span></div><div class="separator" style="clear: both; text-align: justify;"><span style="font-family: Source Sans Pro; font-size: medium;"><b><span style="text-align: left;"><br></span></b></span></div><p></p><p style="text-align: justify;"><span style="font-family: Source Sans Pro; font-size: medium;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp;&nbsp;</span>C++ Influenced Many Other Programming Languages According to various sources, C++ has motivated many different programming languages, several of which consist of C#, Java, or even more recent variations of C. If C++ changed into by no means created, who is aware of what those programming languages could seem like today. C++ changed into Originally Called 'The New C' Computer programmer Rick Mascitti is credited with giving C++ its call, with the ++ indicating a development from C programming.&nbsp;</span></p><p style="text-align: justify;"><span style="font-family: Source Sans Pro; font-size: medium;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span>But earlier than it changed into given this call, C++ changed into sincerely stated as "the brand new C." This is due to the fact C++ attracts proposals from C, constructing upon its framework even as including new functions and features to the language. C++ is a general-purpose, object-orientated programming language. It helps ordinary programming and low-stage reminiscence manipulation.</span></p><p style="text-align: justify;"><span style="font-family: Source Sans Pro; font-size: medium;"><br></span></p><p><span style="font-family: Source Sans Pro; font-size: medium;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span>So the question now arises, <b><span style="color: #0b5394;">What was the need for developing skills in and actually learning C++?</span></b></span></p><p><b><span style="color: #0b5394; font-family: Source Sans Pro; font-size: medium;">{</span></b></p><div style="text-align: left;"><p style="text-align: left;"><span style="font-family: Source Sans Pro; font-size: medium;"><span style="background-color: white; color: #202124;"><span style="font-weight: bold;">&nbsp;&nbsp; &nbsp;</span>If you look up to the current scenario, C++</span><span style="background-color: white; color: #202124;">&nbsp;allows the user to learn programming from the very scratch, from the rock bottom. We need to explain everything we do, which surely gives us a deeper understanding of how all the components work in a cohesion.&nbsp;<br></span></span></p><p><span style="font-family: Source Sans Pro; font-size: medium;"><span style="background-color: white; color: #202124;"><span>&nbsp;&nbsp; &nbsp;</span>A mastery of&nbsp;</span><span style="background-color: white; color: #202124;">C++</span><span style="background-color: white; color: #202124;">&nbsp;is going to familiarize us with many useful concepts like efficient memory management and pointers, not just knowing them first hand but also technicalities about why they're&nbsp;</span><span style="background-color: white; color: #202124;">important</span><span style="background-color: white; color: #202124;">&nbsp;and what exactly they do.</span></span></p></div><p><b><span style="color: #0b5394; font-family: Source Sans Pro; font-size: medium;">}</span></b></p><div class="line number1 index0 alt2" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; vertical-align: baseline; white-space: pre; width: auto;"><code class="cpp keyword bold" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; color: #006699; float: none; font-size: 1em; font-weight: bold; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;"><span style="font-family: Source Sans Pro;"><br></span></code></div><div class="line number1 index0 alt2" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; vertical-align: baseline; white-space: pre; width: auto;"><code class="cpp keyword bold" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; color: #006699; float: none; font-size: 1em; font-weight: bold; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;"><span style="font-family: Source Sans Pro;"><br></span></code></div><div class="line number1 index0 alt2" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; text-align: center; vertical-align: baseline; white-space: pre; width: auto;"><code class="cpp keyword bold" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; color: #006699; float: none; font-size: 1em; font-weight: bold; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;"><span style="font-family: Source Sans Pro;"><br></span></code></div><div class="line number1 index0 alt2" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; text-align: center; vertical-align: baseline; white-space: pre; width: auto;"><span style="font-family: Source Sans Pro;"><code class="cpp keyword bold" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; color: #006699; float: none; font-size: 1em; font-weight: bold; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;">if</code> <code class="cpp plain" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 1em; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;">( TRUE )</code></span></div><div class="line number2 index1 alt1" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; text-align: center; vertical-align: baseline; white-space: pre; width: auto;"><span style="font-family: Source Sans Pro;"><code class="cpp spaces" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 1em; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;">         &nbsp;&nbsp;</code><code class="cpp plain" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 1em; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;">"COIN AS FACT"</code></span></div><div class="line number2 index1 alt1" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; text-align: center; vertical-align: baseline; white-space: pre; width: auto;"><code class="cpp plain" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 1em; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;"><span style="font-family: Source Sans Pro;">else ()</span></code></div><div class="line number2 index1 alt1" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; text-align: center; vertical-align: baseline; white-space: pre; width: auto;"><code class="cpp plain" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 1em; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;"><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp;          </span>"BUST THE MYTH"</span></code></div><div class="line number2 index1 alt1" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; text-align: center; vertical-align: baseline; white-space: pre; width: auto;"><code class="cpp plain" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 1em; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;"><span style="font-family: Source Sans Pro;"><br></span></code></div><div class="line number2 index1 alt1" style="background: none white; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 14px; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px 1em; position: static; text-align: center; vertical-align: baseline; white-space: pre; width: auto;"><code class="cpp plain" style="background: none; border-radius: 0px; border: 0px; box-sizing: content-box; float: none; font-size: 1em; height: auto; inset: auto; line-height: 1.1em; margin: 0px; min-height: auto; outline: 0px; overflow: visible; padding: 0px; position: static; vertical-align: baseline; width: auto;"><span style="font-family: Source Sans Pro;"><br></span></code></div><p><b><span style="font-family: Source Sans Pro; font-size: medium;"></span></b></p><div class="separator" style="clear: both; color: #0b5394; text-align: center;"><b><span style="font-family: Source Sans Pro; font-size: medium;"><a href="./C++ _ Truths and Myths_files/image(3).png" style="margin-left: 1em; margin-right: 1em;"><img alt="" data-original-height="430" data-original-width="1497" height="92" src="./C++ _ Truths and Myths_files/image(3).png" width="320"></a></span></b></div><div class="separator" style="clear: both; color: #0b5394; text-align: center;"><b><span style="font-family: Source Sans Pro;"><br></span></b></div><div class="separator" style="clear: both; color: #0b5394; text-align: center;"><b><span style="font-family: Source Sans Pro;"><br></span></b></div><div class="separator" style="clear: both; color: #0b5394; text-align: center;"><b><span style="font-family: Source Sans Pro; font-size: medium;"><br></span></b></div><b><span style="font-family: Source Sans Pro; font-size: medium;"><span><div style="text-align: center;"><b><span style="font-family: Source Sans Pro; font-size: medium;">&nbsp;There are now various statements or so called assumptions about the topic which we are going to cover up today, so now</span></b></div></span></span></b><p></p><p style="text-align: center;"><b><span style="font-family: Source Sans Pro; font-size: large;">IT IS TIME!!!</span></b></p><p style="text-align: center;"><b style="font-size: large;"><span style="font-family: Source Sans Pro;">Let us checkout all the assertions made over this topic and see numerous truths which are considered truths primitively within a particular class of people and then after that let us give a fact check for the myths which we are about to discover today.</span></b></p><p style="text-align: center;"><b style="font-size: large;"><span style="font-family: Source Sans Pro;"><br></span></b></p><p style="text-align: center;"><span style="font-family: Source Sans Pro;"><b style="font-size: large;"></b></span></p><div class="separator" style="clear: both; text-align: center;"><b style="font-size: large;"><a href="./C++ _ Truths and Myths_files/image(4).png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro;"><img alt="" data-original-height="168" data-original-width="300" height="179" src="./C++ _ Truths and Myths_files/image(4).png" width="320"></span></a></b></div><b style="font-size: large;"><span style="font-family: Source Sans Pro;"><br><br></span></b><p></p><p style="text-align: center;"><span style="font-family: Source Sans Pro;">LETS US DIVE DEEP INTO THE TRUTHS RELATED TO THIS TOPIC</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"The call of C++ indicates the evolutionary nature of the modifications from C. “++” is the C increment operator."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"C++ is one of the important languages for the improvement of all sort of technical and business software."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"C++ introduces Object-Oriented Programming, now not found in C. Like different things, C++ helps us with 4 pillarities or functions of OOP: encapsulation, polymorphism, abstraction, and inheritance."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"></span></p><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro;"><a href="./C++ _ Truths and Myths_files/image(5).png" style="margin-left: 1em; margin-right: 1em;"><img alt="" data-original-height="334" data-original-width="500" height="214" src="./C++ _ Truths and Myths_files/image(5).png" width="320"></a></span></div><span style="font-family: Source Sans Pro;"><br><br></span><p></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"C++ got the OOP features and the basic toolkit of the same from Simula67. (Programming language)"</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"The minimum requirement for a C++ program to run is a Function.</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"The place of invention of C and C++ is the same, i.e. at AT&amp;T (American Telephone and Telegraph) bell laboratories, which are located in U.S.A. as we mentioned in the History part."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"></p><div class="separator" style="clear: both; text-align: center;"><a href="./C++ _ Truths and Myths_files/image(6).png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro;"><img alt="" data-original-height="340" data-original-width="450" height="240" src="./C++ _ Truths and Myths_files/image(6).png" width="318"></span></a></div><span style="font-family: Source Sans Pro;"><br><br></span><p></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"Not totally object oriented: We can write C++ code with out the usage of classes and it's going to bring together with out displaying any error message. The language have a few extensions over C, that make OOP and generic programming greatly convenient."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"A fundamental purpose in the back of achievement of C++ is that it helps diverse programming styles. It is a multiparadigm programming language that now no longer simplest helps OOP paradigm however additionally many different paradigms."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"C++ presents wealthy library assist withinside the shape of Standard Template Library (STL) via which many capabilities are vaiable that assist in quick writing code. For ex:- Several libraries for diverse packing containers like sets, maps, hash, tables, etc."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"Memory Management :- C++ helps us with four varieties of memory management : static storage duration objects , thread storage duration objects , automatic storage duration objects and dynamic objects."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"C++ presently has greater than 35 exclusive operators, starting from mathematics and bit manipulation to logical operations, comparisons and greater. Virtually all of those operators may be overloaded for unique types, even though there are some exceptions, certainly considered one among that is the conditional operator. This enormous array of operators makes C++ user definitions greater like integrated types."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"></p><div class="separator" style="clear: both; text-align: center;"><a href="./C++ _ Truths and Myths_files/image(7).png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro;"><img alt="" data-original-height="436" data-original-width="569" height="240" src="./C++ _ Truths and Myths_files/image(7).png" width="313"></span></a></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro;">Can write a code without” ; ” ? – Yes</span></div><span style="font-family: Source Sans Pro;"><br><br></span><p></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"C++ has two fundamental concepts :- It has two primary concepts – direct mapping for hardware functions and zero-overhead abstractions for mapping."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"The idea of inline characteristic is borrowed from Ada programming language and “//” (single line comment) is a takeaway from BCPL, which is a programming language."</span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"></p><div class="separator" style="clear: both; text-align: center;"><a href="./C++ _ Truths and Myths_files/image(8).png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro;"><img alt="" data-original-height="181" data-original-width="278" height="208" src="./C++ _ Truths and Myths_files/image(8).png" width="320"></span></a></div><span style="font-family: Source Sans Pro;"><br></span><div style="text-align: center;"><span style="font-family: Source Sans Pro; font-size: x-large;">MYTHS</span></div><div style="text-align: center;"><span style="font-family: Source Sans Pro; font-size: medium;">Now is the time to bust some myths regarding C++</span></div><div style="text-align: center;"><span style="font-family: Source Sans Pro;"><br></span></div><div style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><div style="text-align: left;"><span style="font-family: Source Sans Pro;"><br></span></div><p></p><p><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"The first most famous myth about learning C++ is that you need to learn C language beforehand in order to learn C++."</span></p><div><p><span style="font-family: Source Sans Pro;"><br></span></p><p><span style="font-family: Source Sans Pro;">This is totally incorrect, learning basic programming with the help of C++ is far more easier than that of learning the same with C language, these are the facts approved by us ourselves as we actually experienced both hands on.</span></p><p><span style="font-family: Source Sans Pro;"><br></span></p><p><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>“An Object-Oriented Programming Language is C++.”</span></p><p><span style="font-family: Source Sans Pro;">No. If you choose, you can write C++ applications in a procedural fashion. As previously stated, both languages have explicit memory handling functions such as malloc() and free(), both languages support functions, and 90 percent of C code will be compiled by the C++ compiler without modification. Is it now possible to develop procedural code in C++? That's a separate question altogether. Obviously, it falls within the bounds of what you're permitted to do and what you're not permitted to do, but writing procedural code in an object-oriented programming language would very definitely raise eyebrows, even if the outcomes are the same.</span></p><p><span style="font-family: Source Sans Pro;"><br></span></p><p><span style="font-family: Source Sans Pro;"></span></p><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro;"><a href="./C++ _ Truths and Myths_files/image(9).png" style="margin-left: 1em; margin-right: 1em;"><img alt="" data-original-height="1186" data-original-width="2048" height="185" src="./C++ _ Truths and Myths_files/image(9).png" width="320"></a></span></div><span style="font-family: Source Sans Pro;"><br><br></span><p></p><p><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>“You must write low-level code for efficiency.”</span></p><p><span style="font-family: Source Sans Pro;">This statement is so not true. C++ has various methods to increase the efficiency of the compilable code, like the four basic pillars of object oriented programming, so even if you code in a high levelled manner it will still be efficient.</span></p><p><span style="font-family: Source Sans Pro;"><br></span></p><p><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>“Only large, complicated applications should be written in C++.”</span></p><p><span style="font-family: Source Sans Pro;">Now this statement here is a converse of the preceding statement which we saw earlier, as of the statement it holds no truth value within, we can use C++ for basic and small algorithms as well which include basics from sorting techniques to palindromes to the high level and complicated applications.</span></p><p></p><div class="separator" style="clear: both; text-align: center;"><a href="./C++ _ Truths and Myths_files/image(10).png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro;"><img alt="" data-original-height="159" data-original-width="318" height="160" src="./C++ _ Truths and Myths_files/image(10).png" width="320"></span></a></div><span style="font-family: Source Sans Pro;"><br><br></span><p></p><p><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"C++ is too slow and consumes a lot of memory."</span></p><p><span style="font-family: Source Sans Pro;">The above statement is definitely a myth, although a few might disagree about that and it is because of the STL i.e. Standard Template Library which is used by C++ is comparatively slower, however thre are faster tools which we can substitute any time but due to the enclosure of STL within and it's comparative slower speed this statement might be true on some extent but this is not entirely true that is for sure.&nbsp;</span></p><p><span style="font-family: Source Sans Pro;"><span style="background-color: #272822; color: #f8f8f2; font-size: 14.6667px; letter-spacing: 0.162px; white-space: pre;">cout &lt;&lt; statement &lt;&lt; </span>"In safety-critical systems, C++ is too risky."</span></p><p><span style="font-family: Source Sans Pro;">Many might coin this fact due to the statements made by Microsoft's Cloud developer advocate, but this statement also is not entirely true, even if they might term C++ as not a memory safe language but it is well above the par as compared to it's counterparts or subordinate languages like C. If we compare these two for an instance, C++ takes the cake, in terms of being more secure in critical systems.</span></p><p></p><div class="separator" style="clear: both; text-align: center;"><a href="./C++ _ Truths and Myths_files/image(11).png" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Source Sans Pro;"><img alt="" data-original-height="170" data-original-width="296" height="184" src="./C++ _ Truths and Myths_files/image(11).png" width="320"></span></a></div><span style="font-family: Source Sans Pro;"><br>return(<br></span><p></p><p><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span>So if we want to conclude now, we can emphasize various things, C++ is anywhere if we appearance around. From IoT to Database software program, Embedded systems, working systems, scientific applications, and video games are some real-global instances that use C++. Recently, as processors have grown greater effective than ever with tech improvements and the utility scene has taken on extra hard necessities withinside the software program and automobile industry, C++ has witnessed a unexpected boom in its utilization for IoT solutions.</span></p><p><span style="font-family: Source Sans Pro;"><br></span></p><p><span style="font-family: Source Sans Pro;"><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span>The purpose is, C++ gives better performance, flexibility, with the aid of using ingesting much less strength, thereby making it best for small gadgets that can’t with the aid of using themselves hold excessive hobby stages and strength potentials because of constrained electricity capabilities. C++ permits and offers the programmer manipulate over matters withinside the hardware systems, like manipulate over intimate hardware info with out losing to the extent of meeting language.</span></p><p><span style="font-family: Source Sans Pro;">)</span></p><p><span style="font-family: Source Sans Pro;"><br></span></p><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Source Sans Pro;"><a href="./C++ _ Truths and Myths_files/image(12).png" style="margin-left: 1em; margin-right: 1em;"><img alt="" data-original-height="626" data-original-width="626" height="240" src="./C++ _ Truths and Myths_files/image(12).png" width="240"></a></span></div><p></p><p style="text-align: center;"><i><span style="font-family: Source Sans Pro;">C++ is so dependable and famous that even SpaceX makes use of C++ for its rockets.</span></i></p></div><p style="text-align: center;"><span style="font-family: Source Sans Pro;"><br></span></p><p style="text-align: left;"><br></p><p style="text-align: left;"><b style="font-family: &quot;Source Sans Pro&quot;; font-size: large;"><br></b></p><p style="text-align: left;"><b style="font-family: &quot;Source Sans Pro&quot;; font-size: large;">&nbsp; &nbsp; &nbsp; References :&nbsp;</b></p><p style="text-align: left;"><span style="font-family: Source Sans Pro; font-size: medium;"><b><span>&nbsp; &nbsp;&nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span>https://thenewstack.io/microsoft-rust-is-the-industrys-best-chance-at- safe-<span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; </span>systems-programming/</b></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro; font-size: medium;"><b><br></b></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro; font-size: medium;"><b><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp; SAMS teach yourself C++ in 24 hours - Jesse Liberty.</span><br></b></span></p><p style="text-align: left;"><span style="font-family: Source Sans Pro; font-size: medium;"><b><span><br></span></b></span></p><p style="text-align: left;"><b style="font-family: &quot;Source Sans Pro&quot;; font-size: large;"><span>&nbsp; &nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; </span></b><span style="font-family: Source Sans Pro; font-size: medium;"><b>https://ocw.mit.edu/courses/electrical-engineering-and-computer-<span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; <span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; </span></span>science/6-096-introduction-to-c-january-iap-2011/</b></span></p><p style="text-align: left;"><br></p>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+</span>
+<span class="post-timestamp">
+on
+<meta content="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html" itemprop="url">
+<a class="timestamp-link" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2021-06-15T12:58:00-07:00">June 15, 2021</abbr></a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-1593589203">
+<a href="https://www.blogger.com/post-edit.g?blogID=9187332816511663178&amp;postID=1136105483235322620&amp;from=pencil" title="Edit Post">
+<img alt="" class="icon-action" height="18" src="./C++ _ Truths and Myths_files/icon18_edit_allbkg.gif" width="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+<a class="goog-inline-block share-button sb-email" href="https://www.blogger.com/share-post.g?blogID=9187332816511663178&amp;postID=1136105483235322620&amp;target=email" target="_blank" title="Email This"><span class="share-button-link-text">Email This</span></a><a class="goog-inline-block share-button sb-blog" href="https://www.blogger.com/share-post.g?blogID=9187332816511663178&amp;postID=1136105483235322620&amp;target=blog" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=270,width=475&quot;); return false;" target="_blank" title="BlogThis!"><span class="share-button-link-text">BlogThis!</span></a><a class="goog-inline-block share-button sb-twitter" href="https://www.blogger.com/share-post.g?blogID=9187332816511663178&amp;postID=1136105483235322620&amp;target=twitter" target="_blank" title="Share to Twitter"><span class="share-button-link-text">Share to Twitter</span></a><a class="goog-inline-block share-button sb-facebook" href="https://www.blogger.com/share-post.g?blogID=9187332816511663178&amp;postID=1136105483235322620&amp;target=facebook" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" target="_blank" title="Share to Facebook"><span class="share-button-link-text">Share to Facebook</span></a><a class="goog-inline-block share-button sb-pinterest" href="https://www.blogger.com/share-post.g?blogID=9187332816511663178&amp;postID=1136105483235322620&amp;target=pinterest" target="_blank" title="Share to Pinterest"><span class="share-button-link-text">Share to Pinterest</span></a>
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3">
+<span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>14 comments:</h4>
+<div class="comments-content">
+<script async="async" src="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html" type="text/javascript"></script>
+<script type="text/javascript">
+    (function() {
+      var items = null;
+      var msgs = null;
+      var config = {};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        var text = (entry &&
+                    ((entry.content && entry.content.$t) ||
+                     (entry.summary && entry.summary.$t))) ||
+            '';
+        if (entry && entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + text + '</span>';
+            }
+          }
+        }
+        return text;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+<div id="comment-holder">
+<div class="comment-thread toplevel-thread"><ol id="top-ra"><li class="comment" id="c3025427691658090228"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12956452497017571959" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623787828167#c3025427691658090228">June 15, 2021 at 1:10 PM</a></span></div><p class="comment-content">Nice work!!</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="3025427691658090228" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-953255266"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=3025427691658090228">Delete</a></span></span></div><div class="comment-replies"><div id="c3025427691658090228-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c3025427691658090228-ra" class="thread-chrome thread-expanded"><div></div><div id="c3025427691658090228-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="3025427691658090228" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c3025427691658090228-ce"></div></li><li class="comment" id="c3434069358194169164"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12956452497017571959" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623787854271#c3434069358194169164">June 15, 2021 at 1:10 PM</a></span></div><p class="comment-content">Very informative💯</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="3434069358194169164" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-953255266"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=3434069358194169164">Delete</a></span></span></div><div class="comment-replies"><div id="c3434069358194169164-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c3434069358194169164-ra" class="thread-chrome thread-expanded"><div></div><div id="c3434069358194169164-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="3434069358194169164" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c3434069358194169164-ce"></div></li><li class="comment" id="c265276907338391163"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/02765571261300330762" rel="nofollow">Soham</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623809233607#c265276907338391163">June 15, 2021 at 7:07 PM</a></span></div><p class="comment-content">Well worded and an interesting read. </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="265276907338391163" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-202007950"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=265276907338391163">Delete</a></span></span></div><div class="comment-replies"><div id="c265276907338391163-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c265276907338391163-ra" class="thread-chrome thread-expanded"><div></div><div id="c265276907338391163-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="265276907338391163" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c265276907338391163-ce"></div></li><li class="comment" id="c2090208122187536691"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12956452497017571959" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623812905031#c2090208122187536691">June 15, 2021 at 8:08 PM</a></span></div><p class="comment-content">Great concept. </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="2090208122187536691" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-953255266"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=2090208122187536691">Delete</a></span></span></div><div class="comment-replies"><div id="c2090208122187536691-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c2090208122187536691-ra" class="thread-chrome thread-expanded"><div></div><div id="c2090208122187536691-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="2090208122187536691" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c2090208122187536691-ce"></div></li><li class="comment" id="c4705244505876532106"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/03432763436928215215" rel="nofollow">Abhishek Gaikwad</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623812999013#c4705244505876532106">June 15, 2021 at 8:09 PM</a></span></div><p class="comment-content">It was a great read. Nicely Presented</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="4705244505876532106" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-1621861050"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=4705244505876532106">Delete</a></span></span></div><div class="comment-replies"><div id="c4705244505876532106-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c4705244505876532106-ra" class="thread-chrome thread-expanded"><div></div><div id="c4705244505876532106-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="4705244505876532106" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c4705244505876532106-ce"></div></li><li class="comment" id="c3421290688489939557"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/07542820617547658767" rel="nofollow">Aditya Joshi</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623813182994#c3421290688489939557">June 15, 2021 at 8:13 PM</a></span></div><p class="comment-content">This was very informative. Good Work!</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="3421290688489939557" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-321436488"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=3421290688489939557">Delete</a></span></span></div><div class="comment-replies"><div id="c3421290688489939557-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c3421290688489939557-ra" class="thread-chrome thread-expanded"><div></div><div id="c3421290688489939557-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="3421290688489939557" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c3421290688489939557-ce"></div></li><li class="comment" id="c2043015161474019380"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/04895650566898426290" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623815011032#c2043015161474019380">June 15, 2021 at 8:43 PM</a></span></div><p class="comment-content">Great work done, helpful and simple. </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="2043015161474019380" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-1315763103"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=2043015161474019380">Delete</a></span></span></div><div class="comment-replies"><div id="c2043015161474019380-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c2043015161474019380-ra" class="thread-chrome thread-expanded"><div></div><div id="c2043015161474019380-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="2043015161474019380" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c2043015161474019380-ce"></div></li><li class="comment" id="c7782531043047488492"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/08966258619849824243" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623816835526#c7782531043047488492">June 15, 2021 at 9:13 PM</a></span></div><p class="comment-content">Great work! Very Informative.</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="7782531043047488492" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-680700380"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=7782531043047488492">Delete</a></span></span></div><div class="comment-replies"><div id="c7782531043047488492-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c7782531043047488492-ra" class="thread-chrome thread-expanded"><div></div><div id="c7782531043047488492-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7782531043047488492" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c7782531043047488492-ce"></div></li><li class="comment" id="c8492867677230198722"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12240352390694173287" rel="nofollow">Shree Chavan</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623817006350#c8492867677230198722">June 15, 2021 at 9:16 PM</a></span></div><p class="comment-content">This blog helped me a lot ! Thankyou ! </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="8492867677230198722" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-523696418"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=8492867677230198722">Delete</a></span></span></div><div class="comment-replies"><div id="c8492867677230198722-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c8492867677230198722-ra" class="thread-chrome thread-expanded"><div></div><div id="c8492867677230198722-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="8492867677230198722" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c8492867677230198722-ce"></div></li><li class="comment" id="c7069141259283067872"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/17599862889641689082" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623817551465#c7069141259283067872">June 15, 2021 at 9:25 PM</a></span></div><p class="comment-content">Very helpful!</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="7069141259283067872" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-24367583"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=7069141259283067872">Delete</a></span></span></div><div class="comment-replies"><div id="c7069141259283067872-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c7069141259283067872-ra" class="thread-chrome thread-expanded"><div></div><div id="c7069141259283067872-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7069141259283067872" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c7069141259283067872-ce"></div></li><li class="comment" id="c7289205485400791052"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/16521465850242628223" rel="nofollow">ApurvGangavane</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623818269704#c7289205485400791052">June 15, 2021 at 9:37 PM</a></span></div><p class="comment-content">Great work!</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="7289205485400791052" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-346694748"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=7289205485400791052">Delete</a></span></span></div><div class="comment-replies"><div id="c7289205485400791052-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c7289205485400791052-ra" class="thread-chrome thread-expanded"><div></div><div id="c7289205485400791052-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7289205485400791052" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c7289205485400791052-ce"></div></li><li class="comment" id="c1960037905705628981"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/03954183972177812457" rel="nofollow">Chaitanya Sardey</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623823524312#c1960037905705628981">June 15, 2021 at 11:05 PM</a></span></div><p class="comment-content">nicely done </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="1960037905705628981" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-2032201574"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=1960037905705628981">Delete</a></span></span></div><div class="comment-replies"><div id="c1960037905705628981-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c1960037905705628981-ra" class="thread-chrome thread-expanded"><div></div><div id="c1960037905705628981-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="1960037905705628981" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c1960037905705628981-ce"></div></li><li class="comment" id="c8886144986940772862"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12956452497017571959" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623825821843#c8886144986940772862">June 15, 2021 at 11:43 PM</a></span></div><p class="comment-content">Easy to understand. </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="8886144986940772862" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-953255266"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=8886144986940772862">Delete</a></span></span></div><div class="comment-replies"><div id="c8886144986940772862-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c8886144986940772862-ra" class="thread-chrome thread-expanded"><div></div><div id="c8886144986940772862-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="8886144986940772862" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c8886144986940772862-ce"></div></li><li class="comment" id="c2946998513076089947"><div class="avatar-image-container"><img src="./C++ _ Truths and Myths_files/blogger_logo_round_35.png" alt=""></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12956452497017571959" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html?showComment=1623828664985#c2946998513076089947">June 16, 2021 at 12:31 AM</a></span></div><p class="comment-content">Very good information!! </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="2946998513076089947" href="javascript:;">Reply</a><span class="item-control blog-admin blog-admin pid-953255266"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=9187332816511663178&amp;postID=2946998513076089947">Delete</a></span></span></div><div class="comment-replies"><div id="c2946998513076089947-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self" href="javascript:;">Replies</a></span></span><ol id="c2946998513076089947-ra" class="thread-chrome thread-expanded"><div></div><div id="c2946998513076089947-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="2946998513076089947" href="javascript:;">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c2946998513076089947-ce"></div></li></ol><div id="top-continue" class="continue hidden"><a class="comment-reply" target="_self" href="javascript:;">Add comment</a></div><div class="comment-replybox-thread" id="top-ce"><iframe allowtransparency="true" class="blogger-iframe-colorize blogger-comment-from-post" frameborder="0" height="194px" id="comment-editor" name="comment-editor" src="./C++ _ Truths and Myths_files/comment-iframe.html" width="100%" style="display: block;" data-resized="true"></iframe></div><div class="loadmore hidden" data-post-id="1136105483235322620"><a target="_self">Load more...</a></div></div>
+</div>
+</div>
+<p class="comment-footer">
+</p><div class="comment-form">
+<a name="comment-form"></a>
+<p>
+</p>
+<a href="https://www.blogger.com/comment-iframe.g?blogID=9187332816511663178&amp;postID=1136105483235322620&amp;blogspotRpcToken=2096338" id="comment-editor-src"></a>
+
+<script src="./C++ _ Truths and Myths_files/2517944472-comment_from_post_iframe.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+<p></p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+</div>
+<div class="inline-ad">
+<!--Can't find substitution for tag [adCode]-->
+</div>
+
+        </div></div>
+      
+</div>
+<div class="blog-pager" id="blog-pager">
+<a class="home-link" href="https://syeta2-group3-oop-ha.blogspot.com/">Home</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+Subscribe to:
+<a class="feed-link" href="https://syeta2-group3-oop-ha.blogspot.com/feeds/1136105483235322620/comments/default" target="_blank" type="application/atom+xml">Post Comments (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+<div class="sidebar section" id="sidebar-right-1"><div class="widget Profile" data-version="1" id="Profile1">
+<h2>About Me</h2>
+<div class="widget-content">
+<dl class="profile-datablock">
+<dt class="profile-data">
+<a class="profile-name-link g-profile" href="https://www.blogger.com/profile/02050035317172587476" rel="author" style="background-image: url(//www.blogger.com/img/logo-16.png);" data-gapiscan="true" data-onload="true" data-gapiattached="true">
+Shreyash
+</a>
+</dt>
+</dl>
+<a class="profile-link" href="https://www.blogger.com/profile/02050035317172587476" rel="author">View my complete profile</a>
+<div class="clear"></div>
+</div>
+</div><div class="widget BlogArchive" data-version="1" id="BlogArchive1">
+<h2>Blog Archive</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul class="flat">
+<li class="archivedate">
+<a href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/">June 2021</a> (1)
+      </li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="widget ReportAbuse" data-version="1" id="ReportAbuse1">
+<h3 class="title">
+<a class="report_abuse" href="https://www.blogger.com/go/report-abuse" rel="noopener nofollow" target="_blank">
+Report Abuse
+</a>
+</h3>
+</div><div class="widget Translate" data-version="1" id="Translate1">
+<h2 class="title">Translate</h2>
+<div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Language Translate Widget"><option value="">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="rw">Kinyarwanda</option><option value="ko">Korean</option><option value="ku">Kurdish (Kurmanji)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="or">Odia (Oriya)</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="gd">Scots Gaelic</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="tt">Tatar</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="tk">Turkmen</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="ug">Uyghur</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="goog-logo-link" href="https://translate.google.com/" target="_blank"><img src="./C++ _ Truths and Myths_files/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a></span></div></div>
+<script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: 'true',
+        layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+      }, 'google_translate_element');
+    }
+  </script>
+<script src="./C++ _ Truths and Myths_files/element.js.download"></script>
+<div class="clear"></div>
+</div><div class="widget BlogSearch" data-version="1" id="BlogSearch2">
+<h2 class="title">Search This Blog</h2>
+<div class="widget-content">
+<div id="BlogSearch2_form">
+<form action="https://syeta2-group3-oop-ha.blogspot.com/search" class="gsc-search-box" target="_top">
+<table cellpadding="0" cellspacing="0" class="gsc-search-box">
+<tbody>
+<tr>
+<td class="gsc-input">
+<input autocomplete="off" class="gsc-input" name="q" size="10" title="search" type="text" value="">
+</td>
+<td class="gsc-search-button">
+<input class="gsc-search-button" title="search" type="submit" value="Search">
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<div class="clear"></div>
+</div><div class="widget BlogSearch" data-version="1" id="BlogSearch1">
+<h2 class="title">Search This Blog</h2>
+<div class="widget-content">
+<div id="BlogSearch1_form">
+<form action="https://syeta2-group3-oop-ha.blogspot.com/search" class="gsc-search-box" target="_top">
+<table cellpadding="0" cellspacing="0" class="gsc-search-box">
+<tbody>
+<tr>
+<td class="gsc-input">
+<input autocomplete="off" class="gsc-input" name="q" size="10" title="search" type="text" value="">
+</td>
+<td class="gsc-search-button">
+<input class="gsc-search-button" title="search" type="submit" value="Search">
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<div class="clear"></div>
+</div><div class="widget PageList" data-version="1" id="PageList1">
+<div class="widget-content">
+<ul>
+<li>
+<a href="https://syeta2-group3-oop-ha.blogspot.com/">Home</a>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+</div><div class="widget FeaturedPost" data-version="1" id="FeaturedPost1">
+<div class="post-summary">
+<h3><a href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html">C++ : Truths &amp; Myths</a></h3>
+<img class="image" src="./C++ _ Truths and Myths_files/image.png">
+</div>
+<style type="text/css">
+    .image {
+      width: 100%;
+    }
+  </style>
+<div class="clear"></div>
+</div></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="sidebar section" id="sidebar-right-2-1"><div class="widget PopularPosts" data-version="1" id="PopularPosts1">
+<h2>Popular Posts</h2>
+<div class="widget-content popular-posts">
+<ul>
+<li>
+<div class="item-content">
+<div class="item-thumbnail">
+<a href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html" target="_blank">
+<img alt="" border="0" src="./C++ _ Truths and Myths_files/image(13).png">
+</a>
+</div>
+<div class="item-title"><a href="https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html">C++ : Truths &amp; Myths</a></div>
+<div class="item-snippet">Vishwakarma Institute of Technology (An Autonomous Institute affiliated to Savitribai Phule Pune University) AY 2020 - 2021 #include &lt;ios...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+</div></div>
+</td>
+<td class="columns-cell">
+<div class="sidebar no-items section" id="sidebar-right-2-2">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sidebar no-items section" id="sidebar-right-3">
+</div>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot no-items section" id="footer-1"></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="foot no-items section" id="footer-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="foot no-items section" id="footer-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class="foot section" id="footer-3" name="Footer"><div class="widget Attribution" data-version="1" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+Simple theme. Powered by <a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script src="./C++ _ Truths and Myths_files/plusone.js.download" type="text/javascript" gapi_processed="true"></script>
+
+<script type="text/javascript" src="./C++ _ Truths and Myths_files/1140752822-widgets.js.download"></script>
+<script type="text/javascript">
+window['__wavt'] = 'AOuZoY7ncbqhscD5V5viU0J7o06I1x8UbA:1635495631506';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d9187332816511663178','//syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html','9187332816511663178');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '9187332816511663178', 'title': 'C++ : Truths and Myths.', 'url': 'https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html', 'canonicalUrl': 'https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html', 'homepageUrl': 'https://syeta2-group3-oop-ha.blogspot.com/', 'searchUrl': 'https://syeta2-group3-oop-ha.blogspot.com/search', 'canonicalHomepageUrl': 'https://syeta2-group3-oop-ha.blogspot.com/', 'blogspotFaviconUrl': 'https://syeta2-group3-oop-ha.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22C++ : Truths and Myths. - Atom\x22 href\x3d\x22https://syeta2-group3-oop-ha.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22C++ : Truths and Myths. - RSS\x22 href\x3d\x22https://syeta2-group3-oop-ha.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22C++ : Truths and Myths. - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/9187332816511663178/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22C++ : Truths and Myths. - Atom\x22 href\x3d\x22https://syeta2-group3-oop-ha.blogspot.com/feeds/1136105483235322620/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/403901366-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/091427a9c3afa5a8', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '1136105483235322620', 'postImageThumbnailUrl': 'https://lh3.googleusercontent.com/-LfZsVN-UFAY/YMkAencfg8I/AAAAAAAAAP0/6BCfDwV_QbovFRWwDl2eVQq1oXGhmmOawCLcBGAsYHQ/s72-c/image.png', 'postImageUrl': 'https://lh3.googleusercontent.com/-LfZsVN-UFAY/YMkAencfg8I/AAAAAAAAAP0/6BCfDwV_QbovFRWwDl2eVQq1oXGhmmOawCLcBGAsYHQ/image.png', 'pageName': 'C++ : Truths \x26 Myths', 'pageTitle': 'C++ : Truths and Myths.: C++ : Truths \x26 Myths'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'Simple', 'localizedName': 'Simple', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'dark', 'variantId': 'dark'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'C++ : Truths \x26 Myths', 'description': 'Vishwakarma Institute of Technology (An Autonomous Institute affiliated to Savitribai Phule Pune University) AY 2020 - 2021 #include \x3ciostre...', 'featuredImage': 'https://lh3.googleusercontent.com/-LfZsVN-UFAY/YMkAencfg8I/AAAAAAAAAP0/6BCfDwV_QbovFRWwDl2eVQq1oXGhmmOawCLcBGAsYHQ/image.png', 'url': 'https://syeta2-group3-oop-ha.blogspot.com/2021/06/history-of-cpp.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 1136105483235322620}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1918504883-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/4076883957-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-1', document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ReportAbuseView', new _WidgetInfo('ReportAbuse1', 'sidebar-right-1', document.getElementById('ReportAbuse1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TranslateView', new _WidgetInfo('Translate1', 'sidebar-right-1', document.getElementById('Translate1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch2', 'sidebar-right-1', document.getElementById('BlogSearch2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'sidebar-right-1', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'sidebar-right-1', document.getElementById('PageList1'), {'title': '', 'links': [{'isCurrentPage': false, 'href': 'https://syeta2-group3-oop-ha.blogspot.com/', 'title': 'Home'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'sidebar-right-1', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-right-2-1', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./C++ _ Truths and Myths_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><link type="text/css" rel="stylesheet" href="./C++ _ Truths and Myths_files/4076883957-lightbox_bundle.css"><script type="text/javascript" src="./C++ _ Truths and Myths_files/1918504883-lbx.js.download"></script></body></html>
